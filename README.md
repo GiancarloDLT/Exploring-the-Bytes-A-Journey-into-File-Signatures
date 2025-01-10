@@ -63,3 +63,23 @@ A key part of the project is manipulating file signatures by echoing forged sign
 <br />
 <br />
 
+<b> The following is a screenshot from Gary Kessler's Website, and it shows the header (47 49 46 38 37 61) and trailer (00 3B) of a GIF file.<b/> 
+<br>
+<br>
+  <img src="https://i.imgur.com/CXMKh6z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
+<b> By running the command (xxd simpsons.gif | head) we can see the first 10 lines of the files hexa dump, and if we compare the first 2 bytes, we can see the signatures match with the header in the magic numbers table.<b/> 
+<br>
+<br>
+  <img src="https://i.imgur.com/51yVWbB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
+<b> By running the command (xxd simpsons.gif | tail -n 5) we can see the last 5 lines of the files hexa dump, and if we compare the last 2 bytes, we can see the signatures match with the trailer in the magic numbers table.<b/> 
+<br>
+<br>
+  <img src="https://i.imgur.com/f8iuMb0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
