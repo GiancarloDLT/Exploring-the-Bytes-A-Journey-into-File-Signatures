@@ -21,28 +21,28 @@ A key part of the project is manipulating file signatures by echoing forged sign
 <h2>Walk-through:</h2>
 
 <p align="left">
-<h3> In this section we are going to be exploring the file signatures of the image "cat.jpg".</h3>
+<b> In this section, we will explore the file signatures of the "cat.jpg" image.<b/>
 <br>
 <br>
   <img src="https://i.imgur.com/AjYToXE.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
-<b> The following is a screenshot from Gary Kessler's Website, and it shows the header (FF D8) and trailer (FF D9) of a JPG file.<b/> 
+<b> The following screenshot comes from Gary Kessler's Website, showcasing the header (FF D8) and trailer (FF D9) of a JPG file.<b/> 
 <br>
 <br>
   <img src="https://i.imgur.com/GwUqRs3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
-<b> In Linux, we can confirm the file type of "cat.jpg" by using the (file) command.<b/> 
+<b> Running the xxd cat.jpg | head command will display the first 10 lines of the file's hexadecimal dump. By comparing the first two bytes, we can confirm that the signatures align with the header in the magic numbers table.<b/> 
 <br>
 <br>
   <img src="https://i.imgur.com/xAVIR0v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
-<b> By running the command (xxd cat.jpg | head) we can see the first 10 lines of the files hexa dump, and if we compare the first 2 bytes, we can see the signatures match with the header in the magic numbers table.<b/> 
+<b> Running the xxd cat.jpg | tail -n 5 command displays the last 5 lines of the file's hexadecimal dump. By comparing the last two bytes, we can verify that the signatures match the trailer in the magic numbers table.<b/> 
 <br>
 <br>
   <img src="https://i.imgur.com/5cRCwVV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -56,9 +56,9 @@ A key part of the project is manipulating file signatures by echoing forged sign
 <br />
 <br />
 
-<h3> In this section we are going to be manipulating files by forging the signatures of a JPG file.</h3>
+<h3>In this section, we will manipulate files by forging the signatures of a JPG file.</h3>
 
-<b> Here we create a few variables. We create the variable jpegsignature which corralates to the file header and trailer in the magic number table, and a file variable, an array of 3 files (gdltvaycay.jpg gdltvaycay_2.jpg gdltvaycay_3.jpg). We then run a simple in line statement for loop that echos the jpegsignature into each file in the "file" variable. <b/> 
+<b> Here, we define a few variables: jpegsignature contains the header and trailer for a JPG file, matching the entries in the magic numbers table. We also create a files variable, which is an array consisting of three files: "gdltsvacay.jpg," "gdltsvacay_2.jpg," and "gdltsvacay_3.jpg." Then, using a simple for loop, we echo the jpegsignature into each file in the array.<b/> 
 <br>
 <br>
   <img src="https://i.imgur.com/0EFlY8L.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -66,19 +66,10 @@ A key part of the project is manipulating file signatures by echoing forged sign
 <br />
 
 
-
-
-<h3> In this section we are going to be exploring the file signatures of the gif "simpsons.gif".</h3>
+<b> In this section we are going to be exploring the file signatures of the gif "simpsons.gif".<b/>
 <br>
 <br>
   <img src="https://i.imgur.com/DwjbC6Q.gif" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-
-<b> In Linux, we can confirm the file type of "simpsons.gif" by using the (file) command.<b/> 
-<br>
-<br>
-  <img src="https://i.imgur.com/FH0w8fm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
