@@ -21,7 +21,7 @@ A key part of the project is manipulating file signatures by echoing forged sign
 <h2>Walk-through:</h2>
 
 <p align="left">
-<b> In this section we are going to be exploring the file signatures of the image "cat.jpg".<b/>
+<h3> In this section we are going to be exploring the file signatures of the image "cat.jpg".</h3>
 <br>
 <br>
   <img src="https://i.imgur.com/AjYToXE.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -56,10 +56,29 @@ A key part of the project is manipulating file signatures by echoing forged sign
 <br />
 <br />
 
-<b> In this section we are going to be exploring the file signatures of the gif "simpsons.gif".<b/>
+<h3> In this section we are going to be manipulating files by forging the signatures of a JPG file.</h3>
+
+<b> Here we create a few variables. We create the variable jpegsignature which corralates to the file header and trailer in the magic number table, and a file variable, an array of 3 files (gdltvaycay.jpg gdltvaycay_2.jpg gdltvaycay_3.jpg). We then run a simple in line statement for loop that echos the jpegsignature into each file in the "file" variable. <b/> 
+<br>
+<br>
+  <img src="https://i.imgur.com/0EFlY8L.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
+
+
+
+<h3> In this section we are going to be exploring the file signatures of the gif "simpsons.gif".</h3>
 <br>
 <br>
   <img src="https://i.imgur.com/DwjbC6Q.gif" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
+<b> In Linux, we can confirm the file type of "simpsons.gif" by using the (file) command.<b/> 
+<br>
+<br>
+  <img src="https://i.imgur.com/FH0w8fm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
@@ -83,3 +102,4 @@ A key part of the project is manipulating file signatures by echoing forged sign
   <img src="https://i.imgur.com/f8iuMb0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+</p>
