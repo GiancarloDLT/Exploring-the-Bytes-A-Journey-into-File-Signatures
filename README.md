@@ -21,16 +21,45 @@ A key part of the project is manipulating file signatures by echoing forged sign
 <h2>Walk-through:</h2>
 
 <p align="left">
-<b> The "Pangolin.html" template is all about showcasing how header and paragraph tags can bring structure to a page. The page highlights the characteristics of pangolins, with sections on their introduction, description, and challenges, showing how HTML can neatly organize information into readable sections.<b/>
+<b> In this section we are going to be exploring the file signatures of the image "cat.jpg".<b/>
 <br>
 <br>
-  <img src="https://i.imgur.com/1Jf7sQd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/AjYToXE.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
-<b> The "Movies.html" template is a simple, fun way to show off how ordered lists work in HTML. It features ranked lists of favorite movies and other great picks, making it easy to see how lists can help organize content in a clean, logical way..<b/> 
+<b> The following is a screenshot from Gary Kessler's Website, and it shows the header (FF D8) and trailer (FF D9) of a JPG file.<b/> 
 <br>
 <br>
-  <img src="https://i.imgur.com/7NABmWW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/GwUqRs3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+
+<b> In Linux, we can confirm the file type of "cat.jpg" by using the (file) command.<b/> 
+<br>
+<br>
+  <img src="https://i.imgur.com/xAVIR0v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
+<b> By running the command (xxd cat.jpg | head) we can see the first 10 lines of the files hexa dump, and if we compare the first 2 bytes, we can see the signatures match with the header in the magic numbers table.<b/> 
+<br>
+<br>
+  <img src="https://i.imgur.com/5cRCwVV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
+<b> By running the command (xxd cat.jpg | tail -n 5) we can see the last 5 lines of the files hexa dump, and if we compare the last 2 bytes, we can see the signatures match with the trailer in the magic numbers table.<b/> 
+<br>
+<br>
+  <img src="https://i.imgur.com/J6BMfam.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
+<b> In this section we are going to be exploring the file signatures of the gif "simpsons.gif".<b/>
+<br>
+<br>
+  <img src="https://i.imgur.com/DwjbC6Q.gif" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
