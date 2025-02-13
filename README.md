@@ -53,7 +53,7 @@ A key part of the project is manipulating file signatures by echoing forged sign
 <b> Running the xxd cat.jpg | tail -n 5 command displays the last 5 lines of the file's hexadecimal dump. By comparing the last two bytes, we can verify that the signatures match the trailer in the magic numbers table.<b/> 
 <br>
 <br>
-  <img src="https://i.imgur.com/5cRCwVV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/LnJ5tEO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
